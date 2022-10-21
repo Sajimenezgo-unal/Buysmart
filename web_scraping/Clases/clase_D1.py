@@ -60,7 +60,6 @@ class D1():
 
             #Encontremos la longitud de elementos.
             productos = browser.find_elements(By.CLASS_NAME,"prod__image__img ")
-            print("Que putas esta ocurriendo_0")
             try:
                 siguientePagina= browser.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div/div/div/div[3]/div/ul/li[2]/a")
             except Exception as E:
@@ -124,7 +123,6 @@ class D1():
                     productos = browser.find_elements(By.CLASS_NAME,"prod__image__img ")
             #TENGO PROBLEMA PARA RESOLVER AQUI, LA PAGINA LLEGA A LA ULTIMA PAGINA DE LA SECCION Y ENCUENTRA EL BOTON Y LO UNDE, SOLO QUE EL BOTON NO HACE NADA, REVISAR.
             #Solucion: que si siguiente pagina es igual, si no ha cambiado, que no unda el boton sino que sea None  para que acabe el  loop
-                print("Que putas esta ocurriendo")
                 try:
                     siguientePagina = browser.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div/div/div/div[3]/div/ul/li[last()]/button").click()
                 except Exception as E:
