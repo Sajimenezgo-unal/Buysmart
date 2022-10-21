@@ -91,7 +91,6 @@ class Vaquita():
                     #Se espera para volver a la pagina donde se enncuentran todos los productos.
                     browser.implicitly_wait(20)
                     browser.back()
-                print("QUE PUTAS ESTA PASANDO")
                 try:
                     siguientePagina = browser.find_element(By.XPATH,"//*[@id='shopify-section-static-collection']/div[1]/div[3]/nav[2]/ul/li[last()]/a")
                     siguientePagina.click()
