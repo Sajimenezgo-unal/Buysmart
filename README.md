@@ -9,4 +9,4 @@ Seccion django_project:
 Para la sección de la pagina web en django para esta entrega tenemos el desarrollo completo de la pagina, además del desarrollo de la base de datos con la cual se mostrarar los productos obtenidos de las diferentes paginas web.
 
 las carpetas [virtual](virtual) y [buysmart](buysmart) contienen los archivos necesarios para la pagina web.
-dentro de la carpeta [Django_project](Django_project) se encuentra un archivo .rar que contienen las carpetas anteriormente mensionadas 
+dentro de la carpeta [django_project](django_project) se encuentra un archivo .rar que contienen las carpetas anteriormente mensionadas 
