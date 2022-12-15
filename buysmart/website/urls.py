@@ -19,5 +19,7 @@ urlpatterns = [
     path('Vegetables.html', views.Vegetables, name="Vegetables"),
     path('wishlist.html', views.wishlist, name="wishlist"),
     path('test.html', views.test, name="test"),
+    path('', home_view, name='home'),
+    path('home/', home_view, name='home'),
 
 ]
