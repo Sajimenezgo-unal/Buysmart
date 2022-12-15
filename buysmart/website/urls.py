@@ -1,6 +1,7 @@
 from django import views
 from django.urls import path
 from .import views
+from website.views import home_view
 
 app_name = 'core'
 
