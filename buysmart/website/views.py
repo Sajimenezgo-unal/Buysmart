@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .models import Supermercados
 from .models import Carnes
 from .models import Vegetales
@@ -22,6 +23,8 @@ def list_to_queryset(model, data):
     pk_list = [obj.pk for obj in data]
     return model.objects
 
+def home_view(request,*args, **kwargs):
+    return HttpResponse(render(request, 'index.html'))
 
 def index(request):
     carness = Carnes.objects.all().order_by('precio').order_by('?')
