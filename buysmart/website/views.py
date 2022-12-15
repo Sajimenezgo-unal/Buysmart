@@ -24,7 +24,12 @@ def list_to_queryset(model, data):
     return model.objects
 
 def home_view(request,*args, **kwargs):
-    return HttpResponse(render(request, 'index.html'))
+    carness = Carnes.objects.all().order_by('precio').order_by('?')
+    vegetaless = Vegetales.objects.all().order_by('precio').order_by('?')
+    despensass = Despensa.objects.all().order_by('precio').order_by('?')
+    supermercados = Supermercados.objects.all()
+    return HttpResponse(render(request, 'index.html', {'carness': carness, 'vegetaless': vegetaless, 'despensass': despensass, 'supermercados': supermercados}))
+
 
 def index(request):
     carness = Carnes.objects.all().order_by('precio').order_by('?')
