@@ -1,0 +1,17 @@
+DECLARE @a = ["Vegetales","Carnes","Despensa","Supermercados"]
+DECLARE @i 0
+WHILE (@i < 4)
+BEGIN
+sqlite3 data_buysmart.db
+
+.output table_dump.sql
+.dump @a[@i]
+.quit
+
+sqlite3 db.sqlite3
+.read table_dump.sql
+.quit
+
+SET @i = @i+1
+END
+
